@@ -15,5 +15,8 @@ function calculate() {
 
 // Display function
 function display(value) {
+    if(displayBox.value == "undefined") {
+        clearScreen();
+    }
     displayBox.value += value;
 }

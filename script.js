@@ -9,7 +9,9 @@ document.addEventListener("keydown", (event) => {
     if(input === "Backspace" && ctrl === true) {
         clearScreen();
     } else if(input === "Backspace") {
-        displayBox.value = displayBox.value.slice(0, -1);
+        if(!(displayBox.value == "undefined" || displayBox.value == "error")) {
+            displayBox.value = displayBox.value.slice(0, -1);
+        }
     } else if(inputs.includes(input)) {
         display(input);
     } else if(calc.includes(input)) {

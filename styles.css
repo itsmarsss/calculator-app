@@ -79,3 +79,20 @@ body {
 .button:hover {
     font-size: 15px;
 }
+
+.footer {
+    font-family: 'Orbitron', sans-serif;
+    font-size: medium;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 30px;
+    border-radius: 5px;
+    background-color: #ffffff90;
+    height: 23px;
+    width: 185px;
+}
+
+a {
+
+}

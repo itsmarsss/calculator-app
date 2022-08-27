@@ -5,7 +5,6 @@ let ctrl = false;
 
 // Add listeners
 document.addEventListener("keydown", (event) => {
-    console.log(event.key);
     const input = event.key;
     if(input === "Backspace" && ctrl === true) {
         clearScreen();
@@ -20,7 +19,6 @@ document.addEventListener("keydown", (event) => {
     }
 });
 document.addEventListener("keyup", (event) => {
-    console.log(event.key);
     const input = event.key;
     if(input === "Control") {
         ctrl = false;

@@ -10,12 +10,16 @@ function clearScreen() {
 
 // Calculate function
 function calculate() {
-    displayBox.value = eval(displayBox.value);
+    try {
+        displayBox.value = eval(displayBox.value);
+    } catch(error) {
+        displayBox.value = "error";
+    }
 }
 
 // Display function
 function display(value) {
-    if(displayBox.value == "undefined") {
+    if(displayBox.value == "undefined" || displayBox.value == "error") {
         clearScreen();
     }
     displayBox.value += value;

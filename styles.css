@@ -30,6 +30,11 @@ body {
     border-radius: 20px;
     width: 450px;
     height: 70px;
+    transition: 100ms;
+}
+
+.title:hover {
+    font-size: 52px;
 }
 
 .calculator {
@@ -40,6 +45,12 @@ body {
     height: 380px;
     background-color: #191b28;
     border-radius: 20px;
+    transition: 100ms;
+}
+
+.calculator:hover {
+    width: 420px;
+    height: 400px;
 }
 
 .display-box {
@@ -82,7 +93,7 @@ body {
 
 .footer {
     font-family: 'Orbitron', sans-serif;
-    font-size: medium;
+    font-size: 16px;
     text-align: center;
     position: fixed;
     bottom: 0px;
@@ -91,8 +102,26 @@ body {
     background-color: #ffffff90;
     height: 23px;
     width: 185px;
+    transition: 100ms;
+}
+
+.footer:hover {
+    font-size: 17px;
+}
+
+.footer:active {
+    font-size: 16.5px;
 }
 
 a {
+    color: #207cd4;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #adcae5;
 }

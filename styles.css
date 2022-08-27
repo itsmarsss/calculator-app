@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+
+body {
+    background: linear-gradient(-45deg, #f686b3, #fb0066, #64278f, #191b28);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .title {
     font-family: 'Orbitron', sans-serif;
     font-size: 50px;
-    display: flex;
+    margin: auto;
     justify-content: center;
+    text-align: center;
     margin-top: 100px;
+    background-color: #ffffff90;
+    border-radius: 20px;
+    width: 450px;
+    height: 70px;
 }
 
 .calculator {

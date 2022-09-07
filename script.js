@@ -27,7 +27,7 @@ document.addEventListener("keyup", (event) => {
     }
 });
 
-// CLear function
+// Clear function
 function clearScreen() {
     displayBox.value = "";
 }
